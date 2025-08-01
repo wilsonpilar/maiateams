@@ -135,7 +135,7 @@ const translations = {
 };
 
 function App() {
-  const [language, setLanguage] = useState('pt');
+  const [language, setLanguage] = useState('en');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [emailCopied, setEmailCopied] = useState(false);
   const t = translations[language];
