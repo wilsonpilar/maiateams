@@ -60,13 +60,14 @@ const translations = {
       ]
     },
     conclusion: {
-      title: 'Maia Labs: Segurança, Eficiência e Confidencialidade',
+      title: 'Maia: Segurança, Eficiência e Confidencialidade',
       content: 'Com a Maia, instituições financeiras podem realizar repasses de títulos de crédito com total segurança, eficiência e confidencialidade, reforçando a confiança nas operações, independentemente dos indivíduos envolvidos.'
     },
     contact: {
       title: 'Entre em Contato',
       emailDisplay: 'hello@maiateam.com',
-      copyEmail: 'Copiar Email'
+      copyEmail: 'Copiar Email',
+      emailCopied: 'Email Copiado!'
     }
   },
   en: {
@@ -121,13 +122,14 @@ const translations = {
       ]
     },
     conclusion: {
-      title: 'Maia Labs: Security, Efficiency and Confidentiality',
+      title: 'Maia: Security, Efficiency and Confidentiality',
       content: 'With Maia, financial institutions can perform credit title transfers with complete security, efficiency and confidentiality, reinforcing trust in operations, regardless of the individuals involved.'
     },
     contact: {
       title: 'Get in Touch',
       emailDisplay: 'hello@maiateam.com',
-      copyEmail: 'Copy Email'
+      copyEmail: 'Copy Email',
+      emailCopied: 'Email Copied!'
     }
   }
 };
@@ -135,10 +137,12 @@ const translations = {
 function App() {
   const [language, setLanguage] = useState('pt');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
   const t = translations[language];
 
   const toggleLanguage = () => {
     setLanguage(language === 'pt' ? 'en' : 'pt');
+    setEmailCopied(false);
   };
 
   const scrollToSection = (sectionId) => {
@@ -151,7 +155,10 @@ function App() {
 
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText(t.contact.emailDisplay).then(() => {
-      alert('Email copiado para a área de transferência!');
+      setEmailCopied(true);
+      setTimeout(() => {
+        setEmailCopied(false);
+      }, 2000);
     }).catch(err => {
       console.error('Erro ao copiar email: ', err);
     });
@@ -163,7 +170,7 @@ function App() {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={maiaLogo} alt="Maia Labs" className="h-8 w-auto" />
+            <img src={maiaLogo} alt="Maia" className="h-8 w-auto" />
           </div>
           
           {/* Desktop Navigation */}
@@ -301,21 +308,14 @@ function App() {
       </section>
 
       {/* Conclusion Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-12 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {t.conclusion.title}
           </h2>
-          <p className="text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl max-w-4xl mx-auto leading-relaxed">
             {t.conclusion.content}
           </p>
-          <Button
-            size="lg"
-            onClick={() => scrollToSection('contact')}
-            className="bg-white text-blue-600 hover:bg-slate-100 px-8 py-3 text-lg"
-          >
-            {t.conclusion.cta}
-          </Button>
         </div>
       </section>
 
@@ -335,9 +335,9 @@ function App() {
             </p>
             <Button
               onClick={copyEmailToClipboard}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 transition-all duration-200"
             >
-              {t.contact.copyEmail}
+              {emailCopied ? t.contact.emailCopied : t.contact.copyEmail}
             </Button>
           </div>
         </div>
@@ -347,7 +347,7 @@ function App() {
       <footer className="bg-slate-900 text-white py-8 px-4">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <img src={maiaLogo} alt="Maia Labs" className="h-6 w-auto filter invert" />
+            <img src={maiaLogo} alt="Maia" className="h-6 w-auto filter invert" />
           </div>
           <p className="text-slate-400">
             © 2025 Maia Labs. {language === 'pt' ? 'Todos os direitos reservados.' : 'All rights reserved.'}
