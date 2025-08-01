@@ -1,131 +1,135 @@
 import React, { useState } from 'react';
-import { Menu, X, Globe, ChevronDown, Shield, TrendingUp, Users, CheckCircle } from 'lucide-react';
+import { Menu, X, Globe, Shield, TrendingUp, Users, CheckCircle, Lock, FileText, Zap, Mail } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Card, CardContent } from './components/ui/card';
 import { Input } from './components/ui/input';
 import { Textarea } from './components/ui/textarea';
 import './App.css';
-import maiaLogo from './assets/maia_logo.png';
+import maiaLogo from '/maia_logo.png'; // Usando o novo logotipo fornecido pelo usuário
 
 const translations = {
   pt: {
     nav: {
       about: 'Sobre Nós',
-      problem: 'O Problema',
-      solution: 'Nossa Solução',
-      why: 'Por Que Maia?',
+      solution: 'A Solução',
+      benefits: 'Benefícios',
       contact: 'Contato'
     },
     hero: {
-      title: 'Transparência e Confiança no Mercado de Crédito com Blockchain',
-      subtitle: 'Transformando Ativos de Crédito em Registros Digitais Imutáveis e Rastreáveis',
-      cta: 'Saiba Mais'
+      title: 'Confiança e Integridade na Transferência de Títulos de Crédito',
+      subtitle: 'Soluções Blockchain para um Mercado Financeiro Seguro e Transparente',
+      cta: 'Descubra a Solução'
     },
     about: {
-      title: 'Nossa História e Experiência',
-      content: 'Somos Matos e nosso sócio, cada um com mais de uma década de experiência no mercado financeiro. Trabalhamos com todo o espectro de produtos financeiros e já construímos e vendemos empresas antes. Esta não é nossa primeira vez construindo algo significativo.'
-    },
-    problem: {
-      title: 'O Desafio do Mercado de Crédito',
-      content: 'O mercado de crédito depende muito da confiança porque a transparência está ausente. Você realmente não sabe o que aconteceu com um ativo de crédito quando ele é revendido. Quanto mais longe você está na linha de revenda, menos informações confiáveis você tem, tornando o mercado secundário de crédito muito arriscado.'
+      title: 'Nossa História e Expertise',
+      content: 'A Maia é uma empresa especializada em soluções tecnológicas para o mercado de crédito, utilizando blockchain para resolver o desafio fundamental da confiança na transferência de títulos de crédito repassados entre diferentes instituições financeiras. Fundada por Matheus Cansian e Wilson Pilar, profissionais com mais de 10 anos de experiência combinada em finanças e tecnologia, a Maia compreende profundamente a importância da integridade e confidencialidade das informações em operações financeiras.'
     },
     solution: {
-      title: 'A Solução Maia Labs: Blockchain para Crédito',
-      content: 'Com blockchain, não precisamos confiar na entidade - podemos confiar no sistema. Criamos uma plataforma onde transformamos crédito em um registro digital imutável e transparente. Cada evento neste ativo de crédito é rastreável.',
-      benefits: [
-        'O comprador sabe exatamente o que está recebendo',
-        'Não há caixa preta nas transações',
-        'Menos risco ao comprar crédito',
-        'Facilita a venda deste tipo de crédito'
-      ]
+      title: 'A Solução Maia: Blockchain para Confiança no Crédito',
+      content: 'A Maia oferece uma plataforma inovadora baseada em blockchain, projetada especificamente para assegurar a confiança durante o repasse de títulos de crédito entre múltiplas instituições. A premissa fundamental da solução é que não é necessário confiar diretamente nas partes envolvidas na operação; a própria blockchain garante a integridade das informações registradas, tornando impossível qualquer adulteração ou perda de dados.',
+      additional: 'Além disso, a solução oferece evidências claras e históricas que confirmam que os títulos negociados estão fielmente representados e permanecem inalterados durante todo o processo.'
     },
-    why: {
-      title: 'Por Que Maia Labs?',
-      subtitle: 'Transparência e Confiança Redefinidas',
-      features: [
+    benefits: {
+      title: 'Benefícios da Solução Maia',
+      items: [
         {
           icon: Shield,
-          title: 'Transparência Total',
-          description: 'Registros imutáveis e rastreáveis de todos os eventos de crédito'
+          title: 'Confiança Automatizada',
+          description: 'Elimina a necessidade de confiar individualmente nos envolvidos nas transações, garantindo que as informações dos títulos sejam protegidas e invioláveis.'
         },
         {
-          icon: TrendingUp,
-          title: 'Redução de Riscos',
-          description: 'Elimine incertezas com informações completas e verificáveis'
+          icon: FileText,
+          title: 'Evidências Históricas Claras',
+          description: 'Fornece registros claros e rastreáveis que asseguram que os títulos negociados estão devidamente representados, sem qualquer alteração ao longo das operações.'
+        },
+        {
+          icon: Lock,
+          title: 'Sigilo Garantido',
+          description: 'Cada título gera um hash único, funcionando como uma chave segura que limita o acesso apenas às informações autorizadas, mantendo o sigilo necessário.'
         },
         {
           icon: Users,
-          title: 'Confiança no Sistema',
-          description: 'Blockchain elimina a necessidade de confiar em entidades individuais'
+          title: 'Transparência e Controle',
+          description: 'Combina informações públicas e privadas, oferecendo transparência na verificação dos dados essenciais e controle rigoroso sobre o acesso a informações sensíveis.'
+        },
+        {
+          icon: Zap,
+          title: 'Agilidade e Eficiência',
+          description: 'Facilita o rápido acesso e validação das informações originais dos créditos, acelerando significativamente as transações.'
         }
       ]
     },
+    conclusion: {
+      title: 'Maia Labs: Segurança, Eficiência e Confidencialidade',
+      content: 'Com a Maia, instituições financeiras podem realizar repasses de títulos de crédito com total segurança, eficiência e confidencialidade, reforçando a confiança nas operações, independentemente dos indivíduos envolvidos.',
+      cta: 'Fale Conosco'
+    },
     contact: {
       title: 'Entre em Contato',
-      name: 'Nome',
-      email: 'Email',
-      message: 'Mensagem',
-      send: 'Enviar Mensagem'
+      emailDisplay: 'hello@maiateam.com',
+      copyEmail: 'Copiar Email'
     }
   },
   en: {
     nav: {
       about: 'About Us',
-      problem: 'The Problem',
-      solution: 'Our Solution',
-      why: 'Why Maia?',
+      solution: 'The Solution',
+      benefits: 'Benefits',
       contact: 'Contact'
     },
     hero: {
-      title: 'Transparency and Trust in Credit Markets with Blockchain',
-      subtitle: 'Transforming Credit Assets into Immutable and Traceable Digital Records',
-      cta: 'Learn More'
+      title: 'Trust and Integrity in Credit Title Transfers',
+      subtitle: 'Blockchain Solutions for a Secure and Transparent Financial Market',
+      cta: 'Discover the Solution'
     },
     about: {
-      title: 'Our Story and Experience',
-      content: 'We are Matos and my coworker, each with more than a decade of experience in the financial market. We\'ve worked with the full spectrum of financial products and have built and sold companies before. This isn\'t our first time building something meaningful.'
-    },
-    problem: {
-      title: 'The Credit Market Challenge',
-      content: 'The credit market relies heavily on trust because transparency is missing. You don\'t really know what has happened to a credit asset when it\'s resold. The further down you are in the resale line, the less trusted information you have, making the secondary market for credit very risky.'
+      title: 'Our Story and Expertise',
+      content: 'Maia is a company specialized in technological solutions for the credit market, using blockchain to solve the fundamental challenge of trust in the transfer of credit titles passed between different financial institutions. Founded by Matheus Cansian and Wilson Pilar, professionals with more than 10 years of combined experience in finance and technology, Maia deeply understands the importance of integrity and confidentiality of information in financial operations.'
     },
     solution: {
-      title: 'The Maia Labs Solution: Blockchain for Credit',
-      content: 'With blockchain, we don\'t actually need to trust the entity - we can trust the system. We created a platform where we transform credit into an immutable and transparent digital record. Every event on this credit asset is traceable.',
-      benefits: [
-        'The buyer knows exactly what they\'re getting',
-        'No black box in transactions',
-        'Less risk when buying credit',
-        'Makes it easier to sell this kind of credit'
-      ]
+      title: 'The Maia Solution: Blockchain for Credit Trust',
+      content: 'Maia offers an innovative blockchain-based platform, specifically designed to ensure trust during the transfer of credit titles between multiple institutions. The fundamental premise of the solution is that it is not necessary to directly trust the parties involved in the operation; the blockchain itself guarantees the integrity of the recorded information, making any tampering or data loss impossible.',
+      additional: 'Additionally, the solution provides clear and historical evidence that confirms that the traded titles are faithfully represented and remain unchanged throughout the entire process.'
     },
-    why: {
-      title: 'Why Maia Labs?',
-      subtitle: 'Transparency and Trust Redefined',
-      features: [
+    benefits: {
+      title: 'Benefits of the Maia Solution',
+      items: [
         {
           icon: Shield,
-          title: 'Total Transparency',
-          description: 'Immutable and traceable records of all credit events'
+          title: 'Automated Trust',
+          description: 'Eliminates the need to individually trust those involved in transactions, ensuring that title information is protected and inviolable.'
         },
         {
-          icon: TrendingUp,
-          title: 'Risk Reduction',
-          description: 'Eliminate uncertainties with complete and verifiable information'
+          icon: FileText,
+          title: 'Clear Historical Evidence',
+          description: 'Provides clear and traceable records that ensure traded titles are properly represented, without any alteration throughout operations.'
+        },
+        {
+          icon: Lock,
+          title: 'Guaranteed Confidentiality',
+          description: 'Each title generates a unique hash, functioning as a secure key that limits access only to authorized information, maintaining necessary confidentiality.'
         },
         {
           icon: Users,
-          title: 'System Trust',
-          description: 'Blockchain eliminates the need to trust individual entities'
+          title: 'Transparency and Control',
+          description: 'Combines public and private information, offering transparency in verifying essential data and rigorous control over access to sensitive information.'
+        },
+        {
+          icon: Zap,
+          title: 'Agility and Efficiency',
+          description: 'Facilitates rapid access and validation of original credit information, significantly accelerating transactions.'
         }
       ]
     },
+    conclusion: {
+      title: 'Maia Labs: Security, Efficiency and Confidentiality',
+      content: 'With Maia, financial institutions can perform credit title transfers with complete security, efficiency and confidentiality, reinforcing trust in operations, regardless of the individuals involved.',
+      cta: 'Contact Us'
+    },
     contact: {
       title: 'Get in Touch',
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
-      send: 'Send Message'
+      emailDisplay: 'hello@maiateam.com',
+      copyEmail: 'Copy Email'
     }
   }
 };
@@ -147,6 +151,14 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  const copyEmailToClipboard = () => {
+    navigator.clipboard.writeText(t.contact.emailDisplay).then(() => {
+      alert('Email copiado para a área de transferência!');
+    }).catch(err => {
+      console.error('Erro ao copiar email: ', err);
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
@@ -161,14 +173,11 @@ function App() {
             <button onClick={() => scrollToSection('about')} className="text-slate-600 hover:text-blue-600 transition-colors">
               {t.nav.about}
             </button>
-            <button onClick={() => scrollToSection('problem')} className="text-slate-600 hover:text-blue-600 transition-colors">
-              {t.nav.problem}
-            </button>
             <button onClick={() => scrollToSection('solution')} className="text-slate-600 hover:text-blue-600 transition-colors">
               {t.nav.solution}
             </button>
-            <button onClick={() => scrollToSection('why')} className="text-slate-600 hover:text-blue-600 transition-colors">
-              {t.nav.why}
+            <button onClick={() => scrollToSection('benefits')} className="text-slate-600 hover:text-blue-600 transition-colors">
+              {t.nav.benefits}
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-slate-600 hover:text-blue-600 transition-colors">
               {t.nav.contact}
@@ -204,14 +213,11 @@ function App() {
               <button onClick={() => scrollToSection('about')} className="block text-slate-600 hover:text-blue-600 transition-colors">
                 {t.nav.about}
               </button>
-              <button onClick={() => scrollToSection('problem')} className="block text-slate-600 hover:text-blue-600 transition-colors">
-                {t.nav.problem}
-              </button>
               <button onClick={() => scrollToSection('solution')} className="block text-slate-600 hover:text-blue-600 transition-colors">
                 {t.nav.solution}
               </button>
-              <button onClick={() => scrollToSection('why')} className="block text-slate-600 hover:text-blue-600 transition-colors">
-                {t.nav.why}
+              <button onClick={() => scrollToSection('benefits')} className="block text-slate-600 hover:text-blue-600 transition-colors">
+                {t.nav.benefits}
               </button>
               <button onClick={() => scrollToSection('contact')} className="block text-slate-600 hover:text-blue-600 transition-colors">
                 {t.nav.contact}
@@ -232,7 +238,7 @@ function App() {
           </p>
           <Button
             size="lg"
-            onClick={() => scrollToSection('about')}
+            onClick={() => scrollToSection('solution')}
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
           >
             {t.hero.cta}
@@ -246,7 +252,7 @@ function App() {
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
             {t.about.title}
           </h2>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <p className="text-lg text-slate-600 leading-relaxed text-center">
               {t.about.content}
             </p>
@@ -254,67 +260,40 @@ function App() {
         </div>
       </section>
 
-      {/* Problem Section */}
-      <section id="problem" className="py-16 px-4 bg-slate-50">
-        <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
-            {t.problem.title}
-          </h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-slate-600 leading-relaxed text-center">
-              {t.problem.content}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Solution Section */}
-      <section id="solution" className="py-16 px-4 bg-white">
+      <section id="solution" className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
             {t.solution.title}
           </h2>
-          <div className="max-w-3xl mx-auto mb-12">
-            <p className="text-lg text-slate-600 leading-relaxed text-center mb-8">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-lg text-slate-600 leading-relaxed text-center">
               {t.solution.content}
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {t.solution.benefits.map((benefit, index) => (
-              <Card key={index} className="border-l-4 border-l-blue-600">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
-                    <p className="text-slate-700">{benefit}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <p className="text-lg text-slate-600 leading-relaxed text-center">
+              {t.solution.additional}
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Why Maia Section */}
-      <section id="why" className="py-16 px-4 bg-slate-50">
+      {/* Benefits Section */}
+      <section id="benefits" className="py-16 px-4 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-            {t.why.title}
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12 text-center">
+            {t.benefits.title}
           </h2>
-          <p className="text-xl text-slate-600 mb-12 text-center">
-            {t.why.subtitle}
-          </p>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {t.why.features.map((feature, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {t.benefits.items.map((benefit, index) => (
+              <Card key={index} className="text-center hover:shadow-lg transition-shadow border-l-4 border-l-blue-600">
                 <CardContent className="p-8">
-                  <feature.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <benefit.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-slate-900 mb-3">
-                    {feature.title}
+                    {benefit.title}
                   </h3>
-                  <p className="text-slate-600">
-                    {feature.description}
+                  <p className="text-slate-600 leading-relaxed">
+                    {benefit.description}
                   </p>
                 </CardContent>
               </Card>
@@ -323,44 +302,45 @@ function App() {
         </div>
       </section>
 
+      {/* Conclusion Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            {t.conclusion.title}
+          </h2>
+          <p className="text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
+            {t.conclusion.content}
+          </p>
+          <Button
+            size="lg"
+            onClick={() => scrollToSection('contact')}
+            className="bg-white text-blue-600 hover:bg-slate-100 px-8 py-3 text-lg"
+          >
+            {t.conclusion.cta}
+          </Button>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-white">
+      <section id="contact" className="py-16 px-4 bg-slate-50">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-8 text-center">
             {t.contact.title}
           </h2>
           
-          <div className="max-w-2xl mx-auto">
-            <Card>
-              <CardContent className="p-8">
-                <form className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      {t.contact.name}
-                    </label>
-                    <Input placeholder={t.contact.name} />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      {t.contact.email}
-                    </label>
-                    <Input type="email" placeholder={t.contact.email} />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-2">
-                      {t.contact.message}
-                    </label>
-                    <Textarea placeholder={t.contact.message} rows={5} />
-                  </div>
-                  
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    {t.contact.send}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-lg text-slate-700 mb-4 flex items-center justify-center space-x-2">
+              <Mail className="h-6 w-6 text-blue-600" />
+              <a href={`mailto:${t.contact.emailDisplay}`} className="text-blue-600 hover:underline font-semibold">
+                {t.contact.emailDisplay}
+              </a>
+            </p>
+            <Button
+              onClick={copyEmailToClipboard}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3"
+            >
+              {t.contact.copyEmail}
+            </Button>
           </div>
         </div>
       </section>
