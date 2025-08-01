@@ -61,8 +61,7 @@ const translations = {
     },
     conclusion: {
       title: 'Maia Labs: Segurança, Eficiência e Confidencialidade',
-      content: 'Com a Maia, instituições financeiras podem realizar repasses de títulos de crédito com total segurança, eficiência e confidencialidade, reforçando a confiança nas operações, independentemente dos indivíduos envolvidos.',
-      cta: 'Fale Conosco'
+      content: 'Com a Maia, instituições financeiras podem realizar repasses de títulos de crédito com total segurança, eficiência e confidencialidade, reforçando a confiança nas operações, independentemente dos indivíduos envolvidos.'
     },
     contact: {
       title: 'Entre em Contato',
@@ -123,8 +122,7 @@ const translations = {
     },
     conclusion: {
       title: 'Maia Labs: Security, Efficiency and Confidentiality',
-      content: 'With Maia, financial institutions can perform credit title transfers with complete security, efficiency and confidentiality, reinforcing trust in operations, regardless of the individuals involved.',
-      cta: 'Contact Us'
+      content: 'With Maia, financial institutions can perform credit title transfers with complete security, efficiency and confidentiality, reinforcing trust in operations, regardless of the individuals involved.'
     },
     contact: {
       title: 'Get in Touch',
