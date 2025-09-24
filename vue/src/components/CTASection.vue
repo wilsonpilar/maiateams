@@ -19,20 +19,20 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-        <button class="group bg-white text-maia-blue px-12 py-6 rounded-2xl text-xl font-bold hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1">
+        <button @click="scrollToSection('security-trust')" class="group bg-white text-maia-blue px-12 py-6 rounded-2xl text-xl font-bold hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1">
           <span class="flex items-center justify-center">
-            Schedule a Demo
+            Learn More
             <svg class="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
           </span>
         </button>
-        <button class="group border-2 border-white/30 text-white px-12 py-6 rounded-2xl text-xl font-bold hover:border-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
+        <button @click="scrollToSection('outcomes')" class="group border-2 border-white/30 text-white px-12 py-6 rounded-2xl text-xl font-bold hover:border-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
           <span class="flex items-center justify-center">
             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
             </svg>
-            Talk to Sales
+            See Results
           </span>
         </button>
       </div>
@@ -64,6 +64,17 @@
 
 <script>
 export default {
-  name: 'CTASection'
+  name: 'CTASection',
+  methods: {
+    scrollToSection(sectionId) {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    }
+  }
 }
 </script>

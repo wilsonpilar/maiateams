@@ -4,33 +4,55 @@
     <Navigation />
 
     <!-- Hero Section -->
-    <HeroSection />
+    <section id="hero">
+      <HeroSection />
+    </section>
 
     <!-- Why Maia Section -->
-    <WhyMaiaSection />
+    <section id="why-maia">
+      <WhyMaiaSection />
+    </section>
 
     <!-- Security & Trust Section -->
-    <SecurityTrustSection />
+    <section id="security-trust">
+      <SecurityTrustSection />
+    </section>
 
     <!-- How It Works Section -->
-    <HowItWorksSection />
+    <section id="how-it-works">
+      <HowItWorksSection />
+    </section>
 
     <!-- Outcomes Section -->
-    <OutcomesSection />
+    <section id="outcomes">
+      <OutcomesSection />
+    </section>
 
     <!-- Where Maia Helps Section -->
-    <WhereMaiaHelpsSection />
+    <section id="where-maia-helps">
+      <WhereMaiaHelpsSection />
+    </section>
 
     <!-- What Makes Maia Different Section -->
-    <WhatMakesMaiaDifferentSection />
+    <section id="what-makes-different">
+      <WhatMakesMaiaDifferentSection />
+    </section>
 
     <!-- CTA Section -->
-    <CTASection />
+    <section id="cta">
+      <CTASection />
+    </section>
 
     <!-- Footer -->
     <Footer />
   </div>
 </template>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
 
 <script>
 import Navigation from './components/Navigation.vue'
