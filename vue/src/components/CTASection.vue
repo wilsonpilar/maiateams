@@ -70,13 +70,13 @@ export default {
     generateEmail() {
       // Obfuscated email generation to prevent crawler extraction
       const domain = 'maiateam.com'
-      const user = 'sales'
+      const user = 'info'
 
       // Create obfuscated version by splitting and reconstructing
       const obfuscatedEmail = this.obfuscateEmail(user, domain)
 
       // For display, we'll show the actual email
-      this.emailDisplay = 'sales@maiateam.com'
+      this.emailDisplay = 'info@maiateam.com'
       this.emailHref = 'mailto:' + obfuscatedEmail
     },
 
