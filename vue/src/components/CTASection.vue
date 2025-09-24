@@ -18,23 +18,15 @@
         <span class="font-semibold">Your data stays private. Your team gets smarter.</span>
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-        <button @click="scrollToSection('security-trust')" class="group bg-white text-maia-blue px-12 py-6 rounded-2xl text-xl font-bold hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1">
-          <span class="flex items-center justify-center">
-            Learn More
-            <svg class="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-            </svg>
-          </span>
-        </button>
-        <button @click="scrollToSection('outcomes')" class="group border-2 border-white/30 text-white px-12 py-6 rounded-2xl text-xl font-bold hover:border-white hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
+      <div class="flex justify-center mb-16">
+        <a :href="emailHref" class="group bg-white text-maia-blue px-12 py-6 rounded-2xl text-xl font-bold hover:shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center">
           <span class="flex items-center justify-center">
             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
-            See Results
+            {{ emailDisplay }}
           </span>
-        </button>
+        </a>
       </div>
 
       <!-- Trust indicators -->
@@ -65,7 +57,39 @@
 <script>
 export default {
   name: 'CTASection',
+  data() {
+    return {
+      emailDisplay: '',
+      emailHref: ''
+    }
+  },
+  mounted() {
+    this.generateEmail()
+  },
   methods: {
+    generateEmail() {
+      // Obfuscated email generation to prevent crawler extraction
+      const domain = 'maiateam.com'
+      const user = 'sales'
+
+      // Create obfuscated version by splitting and reconstructing
+      const obfuscatedEmail = this.obfuscateEmail(user, domain)
+
+      // For display, we'll show the actual email
+      this.emailDisplay = 'sales@maiateam.com'
+      this.emailHref = 'mailto:' + obfuscatedEmail
+    },
+
+    obfuscateEmail(user, domain) {
+      // Split domain and reconstruct to make it harder for crawlers
+      const domainParts = domain.split('.')
+      const userParts = user.split('')
+
+      // Reconstruct with some obfuscation
+      const reconstructed = userParts.join('') + '@' + domainParts.join('.')
+      return reconstructed
+    },
+
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId)
       if (element) {
