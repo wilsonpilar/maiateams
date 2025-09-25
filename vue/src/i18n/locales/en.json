@@ -1,0 +1,226 @@
+{
+  "hero": {
+    "title": "Bridge the Experience Gap with",
+    "titleHighlight": "AI Assistants",
+    "subtitle": "Transform your junior talent into senior-level performers. Maia's AI assistants work alongside your team, delivering consistent, high-quality results while keeping your data completely private.",
+    "scheduleDemo": "Schedule a Demo",
+    "watchDemo": "Watch Demo",
+    "enterpriseSecurity": "Enterprise Security",
+    "privateByDesign": "Private by Design",
+    "noThirdPartyData": "No Third-Party Data"
+  },
+  "whyMaia": {
+    "title": "Why",
+    "titleHighlight": "Maia",
+    "titleSuffix": "?",
+    "subtitle": "The experience gap between junior and senior talent is costing you time, money, and quality. Here's how we fix it.",
+    "card1": {
+      "title": "Senior-Level Quality, Without Senior-Only Teams",
+      "description": "Hiring senior talent is expensive and slow. Juniors need years to grow. With Maia, you don't have to wait. Our AI assistants sit beside your people, filling in the experience they don't yet have."
+    },
+    "card2": {
+      "title": "Humans First, AI at Their Side",
+      "description": "We don't replace employees — we empower them. Seniors focus on strategy and leadership. Juniors and mid-levels get the support they need to perform closer to a senior level."
+    },
+    "card3": {
+      "title": "Consistency Across the Team",
+      "description": "Best practices, templates, and review criteria are built into Maia assistants. That means your outputs stay on standard, regardless of who on the team is doing the work."
+    }
+  },
+  "securityTrust": {
+    "title": "Security & Trust",
+    "subtitle": "Your data stays private. Your team gets smarter.",
+    "card1": {
+      "title": "Private by Design",
+      "description": "Your data never leaves your environment. No third-party access, no data sharing, no compromises."
+    },
+    "card2": {
+      "title": "Enterprise Security",
+      "description": "Built with enterprise-grade security standards. SOC 2 compliant, with end-to-end encryption."
+    },
+    "card3": {
+      "title": "No Data Mining",
+      "description": "We don't train on your data. Your information stays yours, always."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Simple setup, powerful results",
+    "step1": {
+      "title": "Connect Your Tools",
+      "description": "Integrate with your existing workflow. Slack, Teams, or direct API access."
+    },
+    "step2": {
+      "title": "Deploy AI Assistants",
+      "description": "Our assistants join your team, ready to help with specific tasks and challenges."
+    },
+    "step3": {
+      "title": "Watch Your Team Excel",
+      "description": "See immediate improvements in quality, consistency, and speed across your organization."
+    }
+  },
+  "outcomes": {
+    "title": "Proven Outcomes",
+    "subtitle": "Real results from real teams",
+    "metric1": {
+      "value": "3x",
+      "label": "Faster Delivery"
+    },
+    "metric2": {
+      "value": "85%",
+      "label": "Quality Improvement"
+    },
+    "metric3": {
+      "value": "60%",
+      "label": "Cost Reduction"
+    }
+  },
+  "whereMaiaHelps": {
+    "title": "Where Maia Helps",
+    "subtitle": "Across every department, every role",
+    "engineering": {
+      "title": "Engineering",
+      "description": "Code reviews, architecture decisions, debugging assistance"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Campaign strategy, content creation, performance analysis"
+    },
+    "sales": {
+      "title": "Sales",
+      "description": "Proposal writing, client research, deal strategy"
+    },
+    "operations": {
+      "title": "Operations",
+      "description": "Process optimization, documentation, workflow automation"
+    }
+  },
+  "whatMakesDifferent": {
+    "title": "What Makes Maia Different",
+    "subtitle": "We're not just another AI tool",
+    "card1": {
+      "title": "Built for Teams",
+      "description": "Designed to enhance human collaboration, not replace it."
+    },
+    "card2": {
+      "title": "Privacy First",
+      "description": "Your data never leaves your control. No compromises on security."
+    },
+    "card3": {
+      "title": "Proven Results",
+      "description": "Real teams, real results. See the difference in weeks, not months."
+    }
+  },
+  "cta": {
+    "title": "Ready to Bridge the",
+    "titleHighlight": "Experience Gap?",
+    "subtitle": "Join forward-thinking teams who are already using Maia to unlock their junior talent's potential.",
+    "subtitleHighlight": "Your data stays private. Your team gets smarter.",
+    "email": "info@maiateam.com",
+    "simpleSetup": "Simple Setup",
+    "clearPricing": "Clear Pricing",
+    "enterpriseSecurity": "Enterprise security"
+  },
+  "navigation": {
+    "language": "Language"
+  },
+  "securityTrust": {
+    "title": "Security & Trust",
+    "subtitle": "Not ChatGPT. Not Third-Party. Your Data, Your Control.",
+    "description": "Unlike generic AI tools, Maia never sends your data to ChatGPT or any other third-party provider. We run our own models in our own cloud, so your data stays private, compliant, and under your control.",
+    "enterpriseGrade": "Enterprise-Grade by Design",
+    "feature1": "Segregated environments and access controls.",
+    "feature2": "Full transparency into how assistants generate results.",
+    "feature3": "Built-in guardrails aligned to your policies and compliance needs.",
+    "conclusion": "You can safely let your employees — even juniors — use Maia on sensitive tasks, knowing your data won't leak outside your environment."
+  },
+  "howItWorks": {
+    "title": "How It",
+    "titleHighlight": "Works",
+    "subtitle": "Get started in 4 simple steps. No complex setup, no months of training. Your team will be productive from day one.",
+    "step1": {
+      "title": "Map Critical Work",
+      "description": "Identify the tasks where experience gaps slow your team down — from drafting reports to analyzing data to answering client questions."
+    },
+    "step2": {
+      "title": "Capture Know-How",
+      "description": "Maia encodes your playbooks, templates, and review criteria into task-specific assistants."
+    },
+    "step3": {
+      "title": "Pair and Deliver",
+      "description": "Employees collaborate with Maia in their daily tools to draft, check, and polish deliverables."
+    },
+    "step4": {
+      "title": "Review and Improve",
+      "description": "Managers keep oversight while Maia learns from feedback, tightening quality over time."
+    }
+  },
+  "outcomes": {
+    "title": "Outcomes for Managers",
+    "benefit1": {
+      "title": "Near-Senior Output",
+      "description": "Juniors produce work that feels close to senior-level, ready faster and with fewer revisions."
+    },
+    "benefit2": {
+      "title": "Faster Ramp-Up",
+      "description": "New hires get productive sooner, guided by assistants that embed your standards."
+    },
+    "benefit3": {
+      "title": "Fewer Review Loops",
+      "description": "Built-in checks reduce errors and rework, saving manager time."
+    },
+    "benefit4": {
+      "title": "Scalable Quality",
+      "description": "Deliver consistently high-quality results without staffing every role with seniors."
+    }
+  },
+  "whereMaiaHelps": {
+    "title": "Where",
+    "titleHighlight": "Maia",
+    "titleSuffix": "Helps",
+    "subtitle": "From operations to compliance, Maia enhances every aspect of your team's work with AI-powered assistance.",
+    "operations": {
+      "title": "Operations & Product",
+      "description": "Turn rough inputs into structured specs, documentation, and action plans."
+    },
+    "support": {
+      "title": "Customer Support",
+      "description": "Draft responses and triage cases with greater accuracy and speed."
+    },
+    "processes": {
+      "title": "Internal Processes",
+      "description": "Answer policy questions instantly, cutting tickets and unblock employees."
+    },
+    "training": {
+      "title": "Training & Enablement",
+      "description": "Provide on-demand guidance that helps juniors perform like seasoned staff."
+    },
+    "compliance": {
+      "title": "Compliance & QA",
+      "description": "Enforce checklists and validations that keep deliverables audit-ready."
+    }
+  },
+  "whatMakesDifferent": {
+    "title": "What Makes Maia Different",
+    "feature1": {
+      "title": "Private by Design",
+      "description": "Your data never leaves Maia. We don't use ChatGPT or any third-party providers."
+    },
+    "feature2": {
+      "title": "Task-Specific Assistants",
+      "description": "Not generic chatbots — assistants built for your workflows."
+    },
+    "feature3": {
+      "title": "Accountability Built In",
+      "description": "See and control how answers are generated, not just the final result."
+    },
+    "feature4": {
+      "title": "Human-Centered",
+      "description": "Designed to elevate employees, not replace them."
+    }
+  },
+  "footer": {
+    "tagline": "Building AI assistants for every business need.",
+    "copyright": "© 2025 MAIA. All rights reserved."
+  }
+}

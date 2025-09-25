@@ -10,12 +10,12 @@
 
     <div class="relative max-w-5xl mx-auto text-center">
       <h2 class="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
-        Ready to Bridge the
-        <span class="block">Experience Gap?</span>
+        {{ $t('cta.title') }}
+        <span class="block">{{ $t('cta.titleHighlight') }}</span>
       </h2>
       <p class="text-xl md:text-2xl text-white/90 mb-16 max-w-4xl mx-auto leading-relaxed">
-        Join forward-thinking teams who are already using Maia to unlock their junior talent's potential.
-        <span class="font-semibold">Your data stays private. Your team gets smarter.</span>
+        {{ $t('cta.subtitle') }}
+        <span class="font-semibold">{{ $t('cta.subtitleHighlight') }}</span>
       </p>
 
       <div class="flex justify-center mb-16">
@@ -35,19 +35,19 @@
           <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          Simple Setup
+          {{ $t('cta.simpleSetup') }}
         </div>
         <div class="flex items-center">
           <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          Clear Pricing
+          {{ $t('cta.clearPricing') }}
         </div>
         <div class="flex items-center">
           <svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          Enterprise security
+          {{ $t('cta.enterpriseSecurity') }}
         </div>
       </div>
     </div>

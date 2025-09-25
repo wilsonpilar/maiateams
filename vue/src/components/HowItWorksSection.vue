@@ -3,10 +3,10 @@
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
         <h2 class="text-5xl md:text-6xl font-bold mb-8">
-          How It <span class="text-maia-blue">Works</span>
+          {{ $t('howItWorks.title') }} <span class="text-maia-blue">{{ $t('howItWorks.titleHighlight') }}</span>
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Get started in 4 simple steps. No complex setup, no months of training. Your team will be productive from day one.
+          {{ $t('howItWorks.subtitle') }}
         </p>
       </div>
 
@@ -20,9 +20,9 @@
               <div class="w-20 h-20 bg-gradient-to-br from-maia-blue to-maia-purple rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                 1
               </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900">Map Critical Work</h3>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">{{ $t('howItWorks.step1.title') }}</h3>
               <p class="text-gray-700 leading-relaxed">
-                Identify the tasks where experience gaps slow your team down — from drafting reports to analyzing data to answering client questions.
+                {{ $t('howItWorks.step1.description') }}
               </p>
             </div>
           </div>
@@ -32,9 +32,9 @@
               <div class="w-20 h-20 bg-gradient-to-br from-maia-purple to-maia-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                 2
               </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900">Capture Know-How</h3>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">{{ $t('howItWorks.step2.title') }}</h3>
               <p class="text-gray-700 leading-relaxed">
-                Maia encodes your playbooks, templates, and review criteria into task-specific assistants.
+                {{ $t('howItWorks.step2.description') }}
               </p>
             </div>
           </div>
@@ -44,9 +44,9 @@
               <div class="w-20 h-20 bg-gradient-to-br from-maia-green to-maia-orange rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                 3
               </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900">Pair and Deliver</h3>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">{{ $t('howItWorks.step3.title') }}</h3>
               <p class="text-gray-700 leading-relaxed">
-                Employees collaborate with Maia in their daily tools to draft, check, and polish deliverables.
+                {{ $t('howItWorks.step3.description') }}
               </p>
             </div>
           </div>
@@ -56,9 +56,9 @@
               <div class="w-20 h-20 bg-gradient-to-br from-maia-orange to-maia-blue rounded-2xl flex items-center justify-center mx-auto mb-6 text-2xl font-bold text-white shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                 4
               </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900">Review and Improve</h3>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">{{ $t('howItWorks.step4.title') }}</h3>
               <p class="text-gray-700 leading-relaxed">
-                Managers keep oversight while Maia learns from feedback, tightening quality over time.
+                {{ $t('howItWorks.step4.description') }}
               </p>
             </div>
           </div>

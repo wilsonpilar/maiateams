@@ -1,0 +1,226 @@
+{
+  "hero": {
+    "title": "Preencha a Lacuna de Experiência com",
+    "titleHighlight": "Assistentes de IA",
+    "subtitle": "Transforme seu talento júnior em profissionais de nível sênior. Os assistentes de IA da Maia trabalham ao lado da sua equipe, entregando resultados consistentes e de alta qualidade, mantendo seus dados completamente privados.",
+    "scheduleDemo": "Agendar Demonstração",
+    "watchDemo": "Assistir Demo",
+    "enterpriseSecurity": "Segurança Empresarial",
+    "privateByDesign": "Privado por Design",
+    "noThirdPartyData": "Sem Dados de Terceiros"
+  },
+  "whyMaia": {
+    "title": "Por que",
+    "titleHighlight": "Maia",
+    "titleSuffix": "?",
+    "subtitle": "A lacuna de experiência entre talentos júnior e sênior está custando tempo, dinheiro e qualidade. Veja como resolvemos isso.",
+    "card1": {
+      "title": "Qualidade de Nível Sênior, Sem Equipes Apenas Sênior",
+      "description": "Contratar talentos sênior é caro e lento. Júniors precisam de anos para crescer. Com a Maia, você não precisa esperar. Nossos assistentes de IA ficam ao lado das suas pessoas, preenchendo a experiência que ainda não têm."
+    },
+    "card2": {
+      "title": "Humanos Primeiro, IA ao Lado",
+      "description": "Não substituímos funcionários — os capacitamos. Seniors focam em estratégia e liderança. Júniors e plenos recebem o suporte necessário para performar mais próximo do nível sênior."
+    },
+    "card3": {
+      "title": "Consistência em Toda a Equipe",
+      "description": "Melhores práticas, templates e critérios de revisão são integrados aos assistentes da Maia. Isso significa que suas entregas mantêm o padrão, independentemente de quem da equipe está fazendo o trabalho."
+    }
+  },
+  "securityTrust": {
+    "title": "Segurança e Confiança",
+    "subtitle": "Seus dados ficam privados. Sua equipe fica mais inteligente.",
+    "card1": {
+      "title": "Privado por Design",
+      "description": "Seus dados nunca saem do seu ambiente. Sem acesso de terceiros, sem compartilhamento de dados, sem compromissos."
+    },
+    "card2": {
+      "title": "Segurança Empresarial",
+      "description": "Construído com padrões de segurança de nível empresarial. Compatível com SOC 2, com criptografia ponta a ponta."
+    },
+    "card3": {
+      "title": "Sem Mineração de Dados",
+      "description": "Não treinamos com seus dados. Suas informações sempre permanecem suas."
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Configuração simples, resultados poderosos",
+    "step1": {
+      "title": "Conecte Suas Ferramentas",
+      "description": "Integre com seu fluxo de trabalho existente. Slack, Teams ou acesso direto via API."
+    },
+    "step2": {
+      "title": "Implante Assistentes de IA",
+      "description": "Nossos assistentes se juntam à sua equipe, prontos para ajudar com tarefas e desafios específicos."
+    },
+    "step3": {
+      "title": "Veja Sua Equipe se Destacar",
+      "description": "Veja melhorias imediatas em qualidade, consistência e velocidade em toda sua organização."
+    }
+  },
+  "outcomes": {
+    "title": "Resultados Comprovados",
+    "subtitle": "Resultados reais de equipes reais",
+    "metric1": {
+      "value": "3x",
+      "label": "Entrega Mais Rápida"
+    },
+    "metric2": {
+      "value": "85%",
+      "label": "Melhoria na Qualidade"
+    },
+    "metric3": {
+      "value": "60%",
+      "label": "Redução de Custos"
+    }
+  },
+  "whereMaiaHelps": {
+    "title": "Onde a Maia Ajuda",
+    "subtitle": "Em todos os departamentos, todas as funções",
+    "engineering": {
+      "title": "Engenharia",
+      "description": "Revisões de código, decisões de arquitetura, assistência em debugging"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Estratégia de campanhas, criação de conteúdo, análise de performance"
+    },
+    "sales": {
+      "title": "Vendas",
+      "description": "Escrita de propostas, pesquisa de clientes, estratégia de negócios"
+    },
+    "operations": {
+      "title": "Operações",
+      "description": "Otimização de processos, documentação, automação de fluxos de trabalho"
+    }
+  },
+  "whatMakesDifferent": {
+    "title": "O que Torna a Maia Diferente",
+    "subtitle": "Não somos apenas mais uma ferramenta de IA",
+    "card1": {
+      "title": "Construída para Equipes",
+      "description": "Projetada para melhorar a colaboração humana, não substituí-la."
+    },
+    "card2": {
+      "title": "Privacidade Primeiro",
+      "description": "Seus dados nunca saem do seu controle. Sem compromissos na segurança."
+    },
+    "card3": {
+      "title": "Resultados Comprovados",
+      "description": "Equipes reais, resultados reais. Veja a diferença em semanas, não meses."
+    }
+  },
+  "cta": {
+    "title": "Pronto para Preencher a",
+    "titleHighlight": "Lacuna de Experiência?",
+    "subtitle": "Junte-se a equipes visionárias que já estão usando a Maia para desbloquear o potencial de seus talentos júnior.",
+    "subtitleHighlight": "Seus dados ficam privados. Sua equipe fica mais inteligente.",
+    "email": "info@maiateam.com",
+    "simpleSetup": "Configuração Simples",
+    "clearPricing": "Preços Claros",
+    "enterpriseSecurity": "Segurança empresarial"
+  },
+  "navigation": {
+    "language": "Idioma"
+  },
+  "securityTrust": {
+    "title": "Segurança e Confiança",
+    "subtitle": "Não é ChatGPT. Não é Terceiro. Seus Dados, Seu Controle.",
+    "description": "Diferente de ferramentas de IA genéricas, a Maia nunca envia seus dados para ChatGPT ou qualquer outro provedor terceiro. Executamos nossos próprios modelos em nossa própria nuvem, então seus dados ficam privados, em conformidade e sob seu controle.",
+    "enterpriseGrade": "Nível Empresarial por Design",
+    "feature1": "Ambientes segregados e controles de acesso.",
+    "feature2": "Transparência total sobre como os assistentes geram resultados.",
+    "feature3": "Proteções integradas alinhadas às suas políticas e necessidades de conformidade.",
+    "conclusion": "Você pode permitir com segurança que seus funcionários — mesmo júnior — usem a Maia em tarefas sensíveis, sabendo que seus dados não vazam para fora do seu ambiente."
+  },
+  "howItWorks": {
+    "title": "Como",
+    "titleHighlight": "Funciona",
+    "subtitle": "Comece em 4 passos simples. Sem configuração complexa, sem meses de treinamento. Sua equipe será produtiva desde o primeiro dia.",
+    "step1": {
+      "title": "Mapeie o Trabalho Crítico",
+      "description": "Identifique as tarefas onde as lacunas de experiência desaceleram sua equipe — desde redação de relatórios até análise de dados e resposta a perguntas de clientes."
+    },
+    "step2": {
+      "title": "Capture o Conhecimento",
+      "description": "A Maia codifica seus playbooks, templates e critérios de revisão em assistentes específicos para tarefas."
+    },
+    "step3": {
+      "title": "Pare e Entregue",
+      "description": "Funcionários colaboram com a Maia em suas ferramentas diárias para rascunhar, verificar e polir entregas."
+    },
+    "step4": {
+      "title": "Revise e Melhore",
+      "description": "Gerentes mantêm supervisão enquanto a Maia aprende com feedback, aperfeiçoando a qualidade ao longo do tempo."
+    }
+  },
+  "outcomes": {
+    "title": "Resultados para Gerentes",
+    "benefit1": {
+      "title": "Saída Quase-Sênior",
+      "description": "Júniors produzem trabalho que parece próximo do nível sênior, pronto mais rápido e com menos revisões."
+    },
+    "benefit2": {
+      "title": "Integração Mais Rápida",
+      "description": "Novos contratados ficam produtivos mais cedo, guiados por assistentes que incorporam seus padrões."
+    },
+    "benefit3": {
+      "title": "Menos Loops de Revisão",
+      "description": "Verificações integradas reduzem erros e retrabalho, economizando tempo do gerente."
+    },
+    "benefit4": {
+      "title": "Qualidade Escalável",
+      "description": "Entregue resultados consistentemente de alta qualidade sem preencher cada função com seniores."
+    }
+  },
+  "whereMaiaHelps": {
+    "title": "Onde a",
+    "titleHighlight": "Maia",
+    "titleSuffix": "Ajuda",
+    "subtitle": "De operações a conformidade, a Maia melhora todos os aspectos do trabalho da sua equipe com assistência alimentada por IA.",
+    "operations": {
+      "title": "Operações e Produto",
+      "description": "Transforme entradas brutas em especificações estruturadas, documentação e planos de ação."
+    },
+    "support": {
+      "title": "Suporte ao Cliente",
+      "description": "Rascunhe respostas e triage casos com maior precisão e velocidade."
+    },
+    "processes": {
+      "title": "Processos Internos",
+      "description": "Responda perguntas de política instantaneamente, reduzindo tickets e desbloqueando funcionários."
+    },
+    "training": {
+      "title": "Treinamento e Habilitação",
+      "description": "Forneça orientação sob demanda que ajuda júnior a performar como funcionários experientes."
+    },
+    "compliance": {
+      "title": "Conformidade e QA",
+      "description": "Aplique listas de verificação e validações que mantêm entregas prontas para auditoria."
+    }
+  },
+  "whatMakesDifferent": {
+    "title": "O que Torna a Maia Diferente",
+    "feature1": {
+      "title": "Privado por Design",
+      "description": "Seus dados nunca saem da Maia. Não usamos ChatGPT ou qualquer provedor terceiro."
+    },
+    "feature2": {
+      "title": "Assistentes Específicos para Tarefas",
+      "description": "Não são chatbots genéricos — assistentes construídos para seus fluxos de trabalho."
+    },
+    "feature3": {
+      "title": "Responsabilidade Integrada",
+      "description": "Veja e controle como as respostas são geradas, não apenas o resultado final."
+    },
+    "feature4": {
+      "title": "Centrado no Humano",
+      "description": "Projetado para elevar funcionários, não substituí-los."
+    }
+  },
+  "footer": {
+    "tagline": "Construindo assistentes de IA para cada necessidade empresarial.",
+    "copyright": "© 2025 MAIA. Todos os direitos reservados."
+  }
+}

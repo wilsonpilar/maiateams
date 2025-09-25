@@ -10,20 +10,20 @@
 
     <div class="relative max-w-7xl mx-auto text-center">
       <h1 class="text-6xl md:text-8xl font-bold mb-8 text-balance leading-tight">
-        Bridge the Experience Gap with
+        {{ $t('hero.title') }}
         <span class="bg-gradient-to-r from-maia-blue to-maia-purple bg-clip-text text-transparent">
-          AI Assistants
+          {{ $t('hero.titleHighlight') }}
         </span>
       </h1>
 
       <p class="text-xl md:text-2xl text-gray-700 mb-16 max-w-4xl mx-auto text-pretty leading-relaxed">
-        Transform your junior talent into senior-level performers. Maia's AI assistants work alongside your team, delivering consistent, high-quality results while keeping your data completely private.
+        {{ $t('hero.subtitle') }}
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
         <button @click="scrollToSection('cta')" class="group bg-gradient-to-r from-maia-blue to-maia-purple text-white px-10 py-5 rounded-xl text-lg font-semibold hover:shadow-2xl hover:shadow-maia-blue/25 transition-all duration-300 transform hover:-translate-y-1">
           <span class="flex items-center justify-center">
-            Schedule a Demo
+            {{ $t('hero.scheduleDemo') }}
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
             </svg>
@@ -34,7 +34,7 @@
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            Watch Demo
+            {{ $t('hero.watchDemo') }}
           </span>
         </button>
       </div>
@@ -45,19 +45,19 @@
           <svg class="w-5 h-5 text-maia-green mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          Enterprise Security
+          {{ $t('hero.enterpriseSecurity') }}
         </div>
         <div class="flex items-center">
           <svg class="w-5 h-5 text-maia-green mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          Private by Design
+          {{ $t('hero.privateByDesign') }}
         </div>
         <div class="flex items-center">
           <svg class="w-5 h-5 text-maia-green mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
           </svg>
-          No Third-Party Data
+          {{ $t('hero.noThirdPartyData') }}
         </div>
       </div>
     </div>

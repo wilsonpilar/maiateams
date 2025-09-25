@@ -3,10 +3,10 @@
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20">
         <h2 class="text-5xl md:text-6xl font-bold mb-8">
-          Why <span class="text-maia-blue">Maia</span>?
+          {{ $t('whyMaia.title') }} <span class="text-maia-blue">{{ $t('whyMaia.titleHighlight') }}</span>{{ $t('whyMaia.titleSuffix') }}
         </h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          The experience gap between junior and senior talent is costing you time, money, and quality. Here's how we fix it.
+          {{ $t('whyMaia.subtitle') }}
         </p>
       </div>
 
@@ -18,9 +18,9 @@
             </svg>
           </div>
           <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-            <h3 class="text-2xl font-bold mb-6 text-gray-900">Senior-Level Quality, Without Senior-Only Teams</h3>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900">{{ $t('whyMaia.card1.title') }}</h3>
             <p class="text-gray-700 text-lg leading-relaxed">
-              Hiring senior talent is expensive and slow. Juniors need years to grow. With Maia, you don't have to wait. Our AI assistants sit beside your people, filling in the experience they don't yet have.
+              {{ $t('whyMaia.card1.description') }}
             </p>
           </div>
         </div>
@@ -32,9 +32,9 @@
             </svg>
           </div>
           <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-            <h3 class="text-2xl font-bold mb-6 text-gray-900">Humans First, AI at Their Side</h3>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900">{{ $t('whyMaia.card2.title') }}</h3>
             <p class="text-gray-700 text-lg leading-relaxed">
-              We don't replace employees — we empower them. Seniors focus on strategy and leadership. Juniors and mid-levels get the support they need to perform closer to a senior level.
+              {{ $t('whyMaia.card2.description') }}
             </p>
           </div>
         </div>
@@ -46,9 +46,9 @@
             </svg>
           </div>
           <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-            <h3 class="text-2xl font-bold mb-6 text-gray-900">Consistency Across the Team</h3>
+            <h3 class="text-2xl font-bold mb-6 text-gray-900">{{ $t('whyMaia.card3.title') }}</h3>
             <p class="text-gray-700 text-lg leading-relaxed">
-              Best practices, templates, and review criteria are built into Maia assistants. That means your outputs stay on standard, regardless of who on the team is doing the work.
+              {{ $t('whyMaia.card3.description') }}
             </p>
           </div>
         </div>
