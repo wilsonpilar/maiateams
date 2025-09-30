@@ -7,19 +7,19 @@
     "watchDemo": "Assistir Demo",
     "enterpriseSecurity": "Segurança Empresarial",
     "privateByDesign": "Privado por Design",
-    "noThirdPartyData": "Sem Dados de Terceiros"
+    "noThirdPartyData": "Sem Dados em Terceiros"
   },
   "whyMaia": {
     "title": "Por que",
     "titleHighlight": "Maia",
     "titleSuffix": "?",
-    "subtitle": "A lacuna de experiência entre talentos júnior e sênior está custando tempo, dinheiro e qualidade. Veja como resolvemos isso.",
+    "subtitle": "O gap de experiência entre talentos júnior e sênior está custando tempo, dinheiro e qualidade. Veja como resolvemos isso.",
     "card1": {
-      "title": "Qualidade de Nível Sênior, Sem Equipes Apenas Sênior",
+      "title": "Qualidade de Sênior, Sem Depender Só de Sênior",
       "description": "Contratar talentos sênior é caro e lento. Júniors precisam de anos para crescer. Com a Maia, você não precisa esperar. Nossos assistentes de IA ficam ao lado das suas pessoas, preenchendo a experiência que ainda não têm."
     },
     "card2": {
-      "title": "Humanos Primeiro, IA ao Lado",
+      "title": "Humanos em Primeiro Lugar, IA ao Lado",
       "description": "Não substituímos funcionários — os capacitamos. Seniors focam em estratégia e liderança. Júniors e plenos recebem o suporte necessário para performar mais próximo do nível sênior."
     },
     "card3": {
@@ -126,8 +126,8 @@
   },
   "securityTrust": {
     "title": "Segurança e Confiança",
-    "subtitle": "Não é ChatGPT. Não é Terceiro. Seus Dados, Seu Controle.",
-    "description": "Diferente de ferramentas de IA genéricas, a Maia nunca envia seus dados para ChatGPT ou qualquer outro provedor terceiro. Executamos nossos próprios modelos em nossa própria nuvem, então seus dados ficam privados, em conformidade e sob seu controle.",
+    "subtitle": "Não é ChatGPT. Não é Terceirizado. Seus Dados, Seu Controle.",
+    "description": "Diferente de ferramentas de IA genéricas, a Maia nunca envia seus dados para ChatGPT ou qualquer outro provedor externo. Executamos nossos próprios modelos em nossa própria nuvem, então seus dados ficam privados, em conformidade e sob seu controle.",
     "enterpriseGrade": "Nível Empresarial por Design",
     "feature1": "Ambientes segregados e controles de acesso.",
     "feature2": "Transparência total sobre como os assistentes geram resultados.",
@@ -140,14 +140,14 @@
     "subtitle": "Comece em 4 passos simples. Sem configuração complexa, sem meses de treinamento. Sua equipe será produtiva desde o primeiro dia.",
     "step1": {
       "title": "Mapeie o Trabalho Crítico",
-      "description": "Identifique as tarefas onde as lacunas de experiência desaceleram sua equipe — desde redação de relatórios até análise de dados e resposta a perguntas de clientes."
+      "description": "Identifique as tarefas onde os gaps de experiência desaceleram sua equipe — desde redação de relatórios até análise de dados e resposta a perguntas de clientes."
     },
     "step2": {
       "title": "Capture o Conhecimento",
       "description": "A Maia codifica seus playbooks, templates e critérios de revisão em assistentes específicos para tarefas."
     },
     "step3": {
-      "title": "Pare e Entregue",
+      "title": "Atue Junto e Entregue",
       "description": "Funcionários colaboram com a Maia em suas ferramentas diárias para rascunhar, verificar e polir entregas."
     },
     "step4": {
@@ -158,7 +158,7 @@
   "outcomes": {
     "title": "Resultados para Gerentes",
     "benefit1": {
-      "title": "Saída Quase-Sênior",
+      "title": "Resultado Quase-Sênior",
       "description": "Júniors produzem trabalho que parece próximo do nível sênior, pronto mais rápido e com menos revisões."
     },
     "benefit2": {
